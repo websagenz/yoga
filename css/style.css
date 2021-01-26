@@ -1,0 +1,678 @@
+/*============= RESET STYLE =============
+FONTS:
+Body: font-family: 'Quicksand', sans-serif;
+Nav: font-family: 'Merienda', cursive;
+Headings: font-family: 'Shadows Into Light', cursive;
+*/
+
+/*-- iPhone X Remove Gutters
+Ignore W3C Validation error for this style. --*/
+html {
+   padding: env(safe-area-inset);
+}
+
+/*-- Body Resets --*/
+body {
+   background: #fefbef;
+   font-family: 'Quicksand', sans-serif;
+   font-size: 1.1rem;
+   color: #5E412F;
+}
+
+/*-- Option: Add Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+   padding: 1rem;
+ }
+
+/*-- Remove Blue Browser Outline Around Buttons in Chrome --*/
+a:focus,
+button:focus {
+  outline: 0 !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+/*-- Pointer Cursor On Links & Buttons --*/
+a, .btn, button {
+   cursor: pointer!important;
+}
+
+/*-- Max-width Container For Elements
+other than navbar, carousel, banner & footer --*/
+.wrapper {
+	max-width: 1120px;
+   margin: 0 auto;
+   padding: 0;
+   overflow: hidden;
+}
+
+/*-- Headings --*/
+h1 {
+	font-family: 'Shadows Into Light Two', cursive;
+	text-align: center;
+	font-size: 175%;
+	color: #78C0A8;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	padding: .5rem 0;
+}
+h2, h3, h4 {
+	font-family: 'Shadows Into Light Two', cursive;
+	text-align: center;
+	color: #5E412F;
+	text-transform: uppercase;
+	letter-spacing: .08rem;
+}
+h5 {
+   font-weight: 700;
+}
+
+/*-- Remove Link Color/Underline from Phone #s --*/
+a {
+   color: #5E412F;
+}
+a:hover {
+   color: #5E412F;
+   text-decoration: none;
+}
+
+/*-- Text Colors --*/
+.text-turquoise {
+   color: #78C0A8;
+}
+.text-brown {
+   color: #5E412F;
+}
+
+/*-- Buttons --*/
+.btn {
+   border-width: thin;
+   border-radius: 1.2rem;
+   padding: .6rem 1.2rem;
+   margin: .5rem;
+   box-shadow: 0 0 .5rem rgba(0, 0, 0, .1);
+   transition: all .6s ease;
+ }
+.btn-orange {
+   border-color: #f07818;
+   background-color: #f07818;
+   color: white;
+ }
+.btn-orange:hover,
+.btn-orange:focus  {
+   border-color: #f07818;
+   background-color: white;
+   color: #5E412F;
+}
+.btn-turquoise {
+   border-color: #78C0A8;
+   background-color: #78C0A8;
+   color: white;
+ }
+.btn-turquoise:hover,
+.btn-turquoise:focus  {
+   border-color: #6CAC97;
+   background-color: white;
+   color: #5E412F;
+}
+
+/*-- Background Colors --*/
+.bg-orange {
+   background-color: rgba(240, 120, 24, .6);
+   border-radius: 1.5rem;
+   color: #5E412F;
+   box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+ }
+.bg-clear {
+   background-color: rgba(255, 255, 255, .8);
+   border-radius: 1.5rem;
+   color: #5E412F;
+   box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+}
+.bg-turquoise {
+   background-color: rgba(64, 224, 208, .7);
+   border-radius: 1.5rem;
+   color: white;
+   box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+}
+
+/*-- Center All Images & Set Max Width --*/
+img {
+   display: block;
+	margin: 0 auto;
+   max-width: 100%;
+}
+
+/*============= HEADER =============*/
+
+.callout .svg-inline--fa {
+   color: #78C0A8;
+   font-size: 1.65rem;
+   margin-right: 0;
+}
+.callout h3, .callout a {
+   color: #78C0A8;
+   text-align: right;
+   text-decoration: none!important;
+   font-size: 1.6rem;
+   margin-bottom: 0;
+}
+.callout p {
+	text-align: right;
+	padding: 0%;
+	color: #F07818;
+}
+
+/*============= NAVIGATION =============*/
+
+.navbar-brand img {
+   height: 2rem;
+}
+.navbar {
+   padding: 0;
+   font-family: 'Merienda', cursive;
+   background-color: #FCEBB6;
+   box-shadow: 0 -.5rem .5rem .1rem rgba(0, 0, 0, .02);
+   padding: .3rem 0;
+   font-weight: 700;
+}
+.navbar .container {
+   max-width: 900px;
+}
+.navbar-nav .nav-link {
+   font-size: 1.3rem;
+   padding-top: .5rem;
+   color: #5E412F;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+   text-decoration: underline;
+}
+.svg-inline--fa.fa-bars {
+   color: #5E412F;
+   font-size: 1.7rem;
+}
+
+/*--- Drop-down Menu --*/
+.dropdown-menu, .dropdown-item {
+   font-size: 1.1rem;
+   font-weight: 400!important;
+   background-color: #FCEBB6;
+   border: 0;
+   color: #5E412F;
+   text-align: center;
+   padding: 0;
+}
+.dropdown-menu {
+   background-color: #fff!important;
+   margin-top: 0!important;
+   border-radius: 0;
+   z-index: 1000;
+}
+.dropdown-menu:hover, .dropdown-item:hover,
+.dropdown-menu:focus, .dropdown-item:focus,
+.dropdown-toggle:active, .dropdown-toggle:focus {
+   color: #5E412F!important;
+   background-color: #FCEBB6;
+}
+.dropdown-item {
+   padding: .3rem 0!important;
+}
+.dropdown-item:hover {
+   text-decoration: underline;
+}
+.dropdown-submenu > .dropdown-menu {
+   width: 100%;
+   z-index: 1000;
+}
+
+/*============= CAROUSEL IMAGE SLIDER =============*/
+
+.carousel-inner {
+   max-height: 35rem!important;
+   box-shadow: 0 .65rem .65rem .1rem rgba(0, 0, 0, .15);
+}
+.carousel-inner img {
+  min-width: 100%;
+}
+
+/*-- Change Carousel Transition Speed --*/
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: block;
+  transition: -webkit-transform 1.2s ease;
+  transition: transform 1.2s ease;
+  transition: transform 1.2s ease,-webkit-transform 1.2s ease;
+}
+
+/*-- Carousel Previous & Next Buttons --*/
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+  cursor: pointer!important;
+}
+.carousel-control-next {
+   padding-right: 3.2rem!important;
+}
+.carousel-control-prev .svg-inline--fa,
+.carousel-control-next .svg-inline--fa {
+  position: absolute;
+  font-size: 2.4rem!important;
+  color: rgba(94, 65, 47, .8);
+  background-color: white;
+  border-radius: 50%;
+  opacity: .4;
+  transition: all .5s ease;
+}
+.carousel-control-prev .svg-inline--fa:hover,
+.carousel-control-next .svg-inline--fa:hover {
+  color: rgba(94, 65, 47, .8);
+  background-color: white;
+  box-shadow: 0 0 .65rem rgba(0, 0, 0, .15);
+  border-radius: 50%;
+  opacity: .8;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+/*-- Make Carousel Prev/Next Visible on hover --*/
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0s linear 1000s, opacity 1000ms;
+}
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+   visibility: visible !important;
+   opacity: 1;
+   transition: visibility 0s linear 0s, opacity 1000ms;
+}
+
+/*-- Carousel Caption --*/
+.carousel-caption {
+   left: 12%;
+   right: 12%;
+   position: absolute;
+   transform: translateY(-50%);
+   top: 45%;
+ }
+ .carousel-caption.text-left,
+ .carousel-caption.text-right {
+   top: 41%;
+ }
+
+/*============= PAGE TEXT & IMGs =============*/
+
+p.lead {
+   font-size: 1.1rem;
+}
+img {
+   max-width: 100%;
+}
+img.round {
+   border-radius: 1rem;
+   box-shadow: 0 0 .65rem rgba(0, 0, 0, .1);
+}
+.callout-border {
+   border: .15rem solid #F07818;
+   border-radius: 1.5rem;
+   box-shadow: 0 0 .5rem rgba(0, 0, 0, .1);
+}
+
+/*============= FOOTER =============*/
+
+.footer {
+   background-color: #FCEBB6;
+   box-shadow: 0 0 .8rem .1rem rgba(0, 0, 0, .08);
+}
+.footer h3 {
+   font-size: 1.5rem;
+   text-decoration: underline;
+   padding-bottom: 1rem;
+}
+.footer img { /*-- (logo) --*/
+   max-width: 15rem;
+   padding-bottom: .5rem;
+}
+
+/*-- Social Icons --*/
+.footer .social-center {
+   max-width: 14rem;
+   padding-bottom: 1rem;
+}
+ul.social {
+   display: flex;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+ul.social li {
+   display: inline;
+}
+.footer ul.social li {
+   display: inline;
+   padding: .5rem .5rem;
+}
+.footer .svg-inline--fa {
+   color: #F1842C;
+   font-size: 2rem;
+   transition: all 0.5s ease 0s;
+   box-shadow: 0 0 .15rem rgba(0, 0, 0, .1);
+}
+.footer .svg-inline--fa:hover {
+   color: #85C5AE;
+}
+
+/*-- Google Maps --*/
+.google-maps {
+	position: relative;
+   padding-bottom: 75%;
+   height: 0;
+   overflow: hidden;
+   box-shadow: 0 0 .5rem rgba(0, 0, 0, .1);
+}
+.google-maps iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100% !important;
+   height: 100% !important;
+}
+
+/*-- Top Scroll Button --*/
+
+.scroll-container {
+   width: 3rem;
+   float: right;
+}
+.top-scroll svg.svg-inline--fa {
+   font-size: 2.4rem!important;
+   color: rgba(94, 65, 47, .9);
+   background-color: white;
+   box-shadow: 0 0 .5rem rgba(0, 0, 0, .05);
+   border-radius: 50%;
+   transition: all .5s ease;
+ }
+ a.top-scroll {
+   bottom: 1.2rem;
+   position: fixed;
+   opacity: .5;
+   z-index: 1000;
+   display: none;
+ }
+ a.top-scroll:hover {
+   opacity: 1;
+   transition: all .5s ease;
+ }
+ 
+/*============= ABOUT PAGE =============*/
+
+.banner-pages {
+   position: relative;
+   max-height: 19rem;
+   overflow: hidden;
+   box-shadow: 0px .65rem .65rem 1px rgba(0, 0, 0, .15);
+}
+.banner-pages img {
+   min-width: 100%;
+}
+.banner-pages h1 {
+   position: absolute;
+   z-index: 1;
+   left: 35%;
+   top: 25%;
+   text-shadow: 0 0 .12rem #666;
+}
+.list-group {
+   box-shadow: 0 0 .65rem rgba(0, 0, 0, .1);
+}
+.list-group li {
+   background-color: #fdf2ce;
+   text-align: center;
+   padding: .4rem;
+   color: #5E412F;
+   font-size: 1.25rem;
+   font-weight: 300;
+   letter-spacing: .1rem;
+}
+hr.border-orange {
+   max-width: 96%;
+   margin: 1rem auto;
+   border-top: .15rem solid #F07818;
+   border-radius: 20%;
+   box-shadow: 0 0 .5rem rgba(0, 0, 0, .1);
+}
+.card {
+   box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+   background-color: #fef9e7;
+   border-radius: 1.2rem;
+}
+.card-img-top {
+   border-radius: 1.2rem 1.2rem 0 0;
+   box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .05);
+}
+
+/*============= CLASSES PAGE =============*/
+
+.counter-wrapper {
+   max-width: 23rem;
+}
+.custom-counter {
+   list-style-type: none;
+}
+.custom-counter li {
+   counter-increment: step-counter;
+   padding: .7rem;
+}
+.custom-counter li::before {
+   content: counter(step-counter);
+   margin-right: .7rem;
+   background: #78C0A8;
+   color: #fefbef;
+   font-weight: bold;
+   padding: .2rem .6rem;
+   border-radius: .15rem;
+}
+
+/*============= TESTIMONIALS PAGE =============*/
+
+/*============= CONTACT PAGE =============*/
+
+/*-- Contact Form --*/
+.form-group {
+   margin-bottom: 1.3rem;
+   box-shadow: 0 0 .45rem rgba(0, 0, 0, .05);
+}
+.form-control {
+   background: #fef9e7;
+   border-radius: .5rem;
+   border: .15rem solid #78C0A8;
+   color: #5E412F!important;
+   font-size: 1.1rem;
+}
+.form-control:focus {
+   background: #fef9e7;
+   border: .15rem solid #f07818;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+   color: #8E7A6D;
+}
+input.btn {
+   float: right;
+}
+.controls input:focus,
+.controls textarea:focus { /*-- Remove Element Outlines in Contact Form --*/
+  outline: 0 !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+/*============= MEDIA QUERIES =============*/
+
+/* Large (lg) devices (desktops, 992px and under) */
+@media (max-width: 991.98px) {
+   .navbar {
+      padding: .25rem 5rem;
+   }
+   .navbar-nav .nav-link {
+      font-size: 1.2rem;
+   }
+   .carousel-caption h2 {
+      font-size: 1.7rem;
+   }
+}
+
+/* Medium (md) devices (tablets, 768px and under) */
+@media (max-width: 767.98px) {
+   header img {
+      max-width: 20rem;
+   }
+   .navbar {
+      padding: .2rem 2.5rem;
+   }
+   .navbar-nav .nav-link {
+      font-size: 1.1rem;
+   }
+   .dropdown-menu, .dropdown-item {
+      font-size: 1rem;
+    }
+   .carousel-caption {
+      top:38%;
+   }
+   .carousel-caption h2 {
+      font-size: 1.5rem;
+   }
+   .btn {
+      padding: .45rem 1rem;
+   }
+   h1 {
+      letter-spacing: .1rem;
+   }
+   h2, h3, h4 {
+      letter-spacing: .04rem;
+   }
+   p.lead {
+      font-size: 1.05rem;
+   }
+   .banner-pages h1 {
+      left: 25%!important;
+      top: 20%!important;
+   }
+}
+
+/* Small (sm) devices (landscape phones, 576px and under) */
+@media (max-width: 575.98px) {
+   .navbar {
+      padding: .2rem 0;
+   }
+   .navbar-toggler {
+      width: 100%;
+   }
+   .custom-toggler-icon {
+      float: right;
+      padding-right: 2rem;
+   }
+   .carousel-caption {
+      top:32%!important;
+   }
+   .carousel-caption h2 {
+      font-size: 1.3rem;
+   }
+   .btn {
+      padding: .4rem .9rem;
+   }
+   .banner-pages h1 {
+      left: 20%;
+      top: 15%;
+   }
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*============= WAYPOINTS =============*/
+
+/*-- OPTION: TURN OFF ANIMATION OFF COMPLETELY::
+Note: may effect line progress bar with slight delay,
+line-progressbar waypoints can be adjusted at bottom of plugins.js.--*/
+
+
+/* remove this CSS comment to activate
+
+.animated, .os-animation {
+  -webkit-animation: none!important;
+  -moz-animation: none!important;
+  -o-animation: none!important;
+  animation: none!important;
+  opacity: 1!important;
+  -webkit-animation-delay: none !important;
+  -moz-animation-delay: none !important;
+  animation-delay: none !important;
+  }
+
+*/
+
+/*-- OPTION: TURN OFF ANIMATION ON MOBILE::
+Note: may effect line progress bar with slight delay,
+line-progressbar waypoints can be adjusted at bottom of plugins.js.--*/
+
+
+/* remove this CSS comment to activate
+
+@media (max-width: 767px) {
+	.animated, .os-animation {
+	  -webkit-animation: none!important;
+	  -moz-animation: none!important;
+	  -o-animation: none!important;
+	  animation: none!important;
+	  opacity: 1!important;
+	  -webkit-animation-delay: none !important;
+	  -moz-animation-delay: none !important;
+	  animation-delay: none !important;
+	  }
+	}
+
+*/
+
+
+/*--- Prevent WayPoints from Browser Window Scrolling On Mobile --*/
+/* Devices under 768px (md) */
+@media (max-width: 767px) {
+   .row {
+     overflow-x: hidden;
+     overflow-y: hidden;
+   }
+ }
+ 
+ /*-- Don't modify waypoints CSS below,
+ this is required for waypoints to work --*/
+ .os-animation{
+   opacity: 0;
+   margin: 0!important;
+   max-width: 100%;
+  }
+  .os-animation.animated {
+   opacity: 1;
+  }
+ 
+  /*Fix maps scroll issue*/
+ .scrolloff {
+   pointer-events: none;
+ }
